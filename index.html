@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projekt na zaliczenie</title>
+    <title>Skyline Cinema - najlepsze kino pod księżycem</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Montserrat&display=swap" rel="stylesheet">
 </head>
@@ -12,15 +12,114 @@
         <nav class="mainMenu">
             <ul>
                 <li class="menuButton"><a href="index.html">Strona główna</a></li>
-                <li class="menuButton"><a href="cennik.html">Cennik</a></li>
-                <li class="menuButton"><a href="galeria.html">Galeria</a></li>
-                <li class="menuButton"><a href="kontakt.html">Kontakt</a></li>
-                <li class="menuButton"><a href="info.html">Informacje</a></li>
+                <li class="menuButton"><a href="#gallery">Galeria</a></li>
+                <li class="menuButton"><a href="#price">Cennik</a></li>
+                <li class="menuButton"><a href="#info">Informacje</a></li>
+                <li class="menuButton"><a href="#contact">Kontakt</a></li>
             </ul>
         </nav>
         <div id="mainImage">
-            <img src=".\images\tlo.jpg">
+            <img src="images/tlo.jpg" alt="Skyline Cinema - najlepsze kino pod księżycem">
         </div>
+        <header class="title">
+            <h1>Skyline Cinema - najlepsze kino pod księżycem</h1>
+        </header>
+        <section id="mainText">
+            <h2>
+                Kino samochodowe, pokazy plenerowe, organizacja imprez masowych.
+            </h2>
+            <p>
+                Jesteśmy firmą specjalizującą się w organizacji imprez wymagających dobrej widoczności prezentowanej treści oraz wysokiej jakości dźwięku. 
+                <br>
+                W zależności od preferencji zapewniamy również pełne wsparcie sanitarne dla punktów gastronomicznych typu foodtruck, dodatkowe namioty organizacyjne, w razie potrzeby również nocleg na terenie imprezy.
+                <br>
+                Po więcej informacji kliknij <a href="info.html" target="_blank">TUTAJ</a>.
+            </p>
+
+            <article class="quote">
+                <h2>Pisze o nas Forbezz:</h2>
+                <p>
+                    <q>Zaskakująca inicjatywa, organizacja na bardzo wysokim poziomie, idealnie rozwiązanie dla firm, które szukają nieszablonowego sposobu na zorganizowanie spotkań zarówno intergracyjnych jak i konferencyjnych. Nasza ocena: 10/10. </q>
+                </p>
+            </article>
+            <hr>
+            <article id="gallery">
+                Tu bedzie galeria
+            </article>
+            <hr>
+            <article id="price">
+                <h2>Cennik</h2>
+            </article>
+            <hr>
+            <article id="info">
+                <h2>Informacje</h2>
+                <p>
+                    Do wyświetlania seansów pod gołym niebem używamy wysokiej jakości rzutnika ABC1234 charakteryzującego się wyśmienitą ostrością oraz kolorystyką obrazu rzucanego, a przede wszystkim obraz jest widoczny nawet w pełnym słońcu, stwarza to możliwość robienia pokazów nawet w samo południe! Dźwięk transmitowany jest za pomocą transmiterów FM, więc każdy uczestnik seansu może dostosować głośność w swoim pojeździe do własnych preferencji. Dla osób, które nie mogą korzystać z nagłośnienia w swoim samochodzie oferujemy możliwość bezpłatnego wypożyczenia odbiornika na czas seansu (w cenie biletu).  
+                </p>
+            </article>
+            <hr>
+            <article id="contact">
+                <div class="contactList">
+                    <h3>Skontaktuj się z nami:</h3>
+                    <ul>
+                        <li>Telefon stacjonarny: +12 123 12 31</li>
+                        <li>Telefeon komórkowy: +48 123 123 123</li>
+                        <li>E-mail: skylinecinema@mail.com</li>
+                        <li>Fax: 222 222 222</li>
+                        <li>Biuro stacjonarne: Kraków ul. Kinowa 123</li>
+                    </ul>
+                </div>
+                <div class="newsletterForm">
+                    <h3>Zapisz się do naszego newslettera by na bieżąco dowiadywać się o naszych seansach:</h3>
+                    <form>
+                        <label for="name">Podaj imię:</label>
+                        <input type="text" id="name" name="name"> 
+                        <br>
+                        <label for="email">Podaj e-mail:</label>
+                        <input type="email" id="email" name="email">
+                        <br>
+                        <label for="age">Przedział wiekowy:</label>
+                        <select name="Wiek" id="age">
+                            <option value="18>">Poniżej 18 lat</option>
+                            <option value="18-25">18-25 lat</option>
+                            <option value="25-40">25-40 lat</option>
+                            <option value="40+">40+ lat</option>
+                        </select>   
+                        <textarea id="whereInfo" name="skad" rows="3" cols="40" placeholder="(opcjonalnie) napisz, skąd się o nas dowiedziałeś/aś :)">
+                            <!-- NAPRAWIC NIE POJAWIA SIE -->
+                        </textarea>
+                        <br>
+                        <input type="submit" value="Zapisz się!">
+                    </form>
+                </div>
+            </article>
+        </section>
+        <aside class="asideAD">
+            <div class="asideText"><h1>Kontrahenci:</h1></div>
+            <div class="ads">
+                <div class="ad">
+                    <figure>
+                        <img src="https://picsum.photos/100">
+                        <figcaption>Firma Krzak</figcaption>
+                    </figure>
+                </div>
+                <div class="ad">
+                    <figure>
+                        <img src="https://picsum.photos/100">
+                        <figcaption>Firma Słup</figcaption>
+                    </figure>   
+                </div>
+                <div class="ad">
+                    <figure>
+                        <img src="https://picsum.photos/100">
+                        <figcaption>Firma Łoś</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </aside>
+        <footer class="footer">
+            <span>&copy; by Damian Jarosz 2020</span>
+        </footer>
     </div>
     
     

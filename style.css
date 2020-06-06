@@ -1,11 +1,31 @@
 body{
     margin:0;
     padding:0;
-    font-family: 'Montserrat', sans-serif;
+    
     
 }
 .mainContainer{
-    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+.ainMenu{
+    display:flex;
+    background-color:rgb(001, 042, 072);
+    min-height: 50px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    
+
+}
+.ainMenu .menuButtn{
+  
+    width: 200px;
+    padding-top:13px;
+    text-align: center;
+    
+
+}
+.menuButtn a{
+    color:rgb(201, 201, 201);
 }
 .mainMenu{
 position:sticky; 
@@ -38,4 +58,60 @@ top:0;
 }
 #mainImage img{
     width:100%;
+}
+header{
+    display:block;
+    text-align: center;
+}
+#mainText{
+    width:1000px;
+    margin: auto;
+    background-color: red;
+    
+}
+#mainText p{
+    background-color: green;
+    margin-bottom:50px;
+}
+.footer{
+    background-color:rgb(001, 042, 072);
+    text-align: center;
+    height:30px;
+    color:rgb(201, 201, 201);
+    display:block;
+    padding-top:10px;
+    padding-bottom: 0px;
+}
+
+.ad figcaption{
+    text-align: center;
+}
+.asideText{
+    background-color: yellow;
+    text-align:center;
+}
+.ads{
+    display:flex;
+    justify-content: center;
+}
+.ad{
+    margin: 0 25px;
+}
+a{
+text-decoration: none;
+}
+#contact{
+    display:flex;
+
+}
+.contactList{
+background-color: blue;
+width: 50%;
+}
+.newsletterForm{
+    width:50%;
+    background-color: chartreuse;
+}
+textarea{
+    resize:none
 }
