@@ -7,43 +7,18 @@ body{
 .mainContainer{
     font-family: 'Montserrat', sans-serif;
 }
-.ainMenu{
-    display:flex;
+.mainMenu{
+    position:sticky; 
+    top:0;
     background-color:rgb(001, 042, 072);
+    display: flex;
     min-height: 50px;
     justify-content: center;
     flex-wrap: nowrap;
-    
-
-}
-.ainMenu .menuButtn{
-  
-    width: 200px;
-    padding-top:13px;
-    text-align: center;
-    
-
-}
-.menuButtn a{
-    color:rgb(201, 201, 201);
-}
-.mainMenu{
-position:sticky; 
-top:0;
-}
-.mainMenu ul{
-    list-style:none;
-    background-color:rgb(001, 042, 072);
-    text-align:center;
-    margin-bottom: 0px;
-    padding-left: 0;
-    margin-top:0px;
-
-}
-.mainMenu ul li {
-    display:inline-block;
+    z-index: 99999;
 }
 .menuButton a{
+    text-align:center;
     text-decoration: none;
     display:block;
     padding:15px;
@@ -56,6 +31,7 @@ top:0;
     background-color:rgba(0, 0, 0, 0.651);
     transition-duration: 0.4s;
 }
+
 #mainImage img{
     width:100%;
 }
@@ -93,6 +69,7 @@ header{
 .ads{
     display:flex;
     justify-content: center;
+    flex-wrap:wrap;
 }
 .ad{
     margin: 0 25px;
@@ -105,7 +82,7 @@ text-decoration: none;
 
 }
 .contactList{
-background-color: blue;
+background-color:rosybrown;
 width: 50%;
 }
 .newsletterForm{
@@ -114,4 +91,75 @@ width: 50%;
 }
 textarea{
     resize:none
+}
+#gallery{
+    height:660px;
+    background-color: yellow;
+    position: relative;
+}
+#gallery h2{
+    background-color: turquoise;
+    display:block;
+    text-align: center;
+    padding: 13px;
+    margin-bottom:0;
+    padding-top:50px;
+}
+.slider{
+    position: absolute;  
+    width:800px;
+    height:550px;
+    overflow: hidden;
+    left:10%;
+
+}
+.slidernav{
+    position: absolute;
+    bottom: 20px;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+}
+.bar{
+    width:50px;
+    height: 10px;
+    border: 2px solid white;
+    margin: 6px;
+    cursor: pointer;
+    transition:0.4s;
+}
+.bar:hover{
+    background-color: white;
+}
+input[name="r"]{
+    position: absolute;
+    visibility:hidden;
+}
+.slides{
+    width:500%;
+    height: 100%;
+    display:flex;
+}
+.slide{
+    width:20%;
+    transition:0.6s;
+}
+.slide img{
+    width:100%;
+    height: 100%;
+}
+#r1:checked ~ .s1{
+    margin-left: 0; 
+}
+#r2:checked ~ .s1{
+    margin-left: -20%;
+}
+#r3:checked ~ .s1{
+    margin-left: -40%;
+}
+#r4:checked ~ .s1{
+    margin-left: -60%;
+}
+#r5:checked ~ .s1{
+    margin-left: -80%;
 }

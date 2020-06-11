@@ -10,13 +10,11 @@
 <body>
     <div class="mainContainer">
         <nav class="mainMenu">
-            <ul>
-                <li class="menuButton"><a href="index.html">Strona główna</a></li>
-                <li class="menuButton"><a href="#gallery">Galeria</a></li>
-                <li class="menuButton"><a href="#price">Cennik</a></li>
-                <li class="menuButton"><a href="#info">Informacje</a></li>
-                <li class="menuButton"><a href="#contact">Kontakt</a></li>
-            </ul>
+                <div class="menuButton"><a href="index.html">Strona główna</a></div>
+                <div class="menuButton"><a href="#gallery">Galeria</a></div>
+                <div class="menuButton"><a href="#price">Cennik</a></div>
+                <div class="menuButton"><a href="#info">Informacje</a></div>
+                <div class="menuButton"><a href="#contact">Kontakt</a></div>
         </nav>
         <div id="mainImage">
             <img src="images/tlo.jpg" alt="Skyline Cinema - najlepsze kino pod księżycem">
@@ -44,11 +42,41 @@
             </article>
             <hr>
             <article id="gallery">
-                Tu bedzie galeria
+                <h2>Fotorelacje z naszych eventów</h2>
+                <div class="slider">
+                    <div class="slides">
+                            <input type="radio" name="r" id="r1" checked>
+                            <input type="radio" name="r" id="r2">
+                            <input type="radio" name="r" id="r3">
+                            <input type="radio" name="r" id="r4">
+                            <input type="radio" name="r" id="r5">
+                            <div class="slide s1"><img src="https://picsum.photos/id/10/800/550" alt="pic1"></div>
+                            <div class="slide"><img src="https://picsum.photos/id/100/800/550" alt="pic2"></div>
+                            <div class="slide"><img src="https://picsum.photos/id/101/800/550" alt="pic3"></div>
+                            <div class="slide"><img src="https://picsum.photos/id/1011/800/550" alt="pic4"></div>
+                            <div class="slide"><img src="https://picsum.photos/id/102/800/550" alt="pic5"></div>
+
+                    </div>
+
+                     <div class="slidernav">
+                         <label for="r1" class="bar"></label>
+                         <label for="r2" class="bar"></label>
+                         <label for="r3" class="bar"></label>
+                         <label for="r4" class="bar"></label>
+                         <label for="r5" class="bar"></label>
+                     </div>
+                </div>
             </article>
             <hr>
             <article id="price">
                 <h2>Cennik</h2>
+                <table class="table">
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </table>
             </article>
             <hr>
             <article id="info">
@@ -63,7 +91,7 @@
                     <h3>Skontaktuj się z nami:</h3>
                     <ul>
                         <li>Telefon stacjonarny: +12 123 12 31</li>
-                        <li>Telefeon komórkowy: +48 123 123 123</li>
+                        <li>Telefon komórkowy: +48 123 123 123</li>
                         <li>E-mail: skylinecinema@mail.com</li>
                         <li>Fax: 222 222 222</li>
                         <li>Biuro stacjonarne: Kraków ul. Kinowa 123</li>
@@ -95,7 +123,7 @@
             </article>
         </section>
         <aside class="asideAD">
-            <div class="asideText"><h1>Kontrahenci:</h1></div>
+            <div class="asideText"><h2>Kontrahenci:</h2></div>
             <div class="ads">
                 <div class="ad">
                     <figure>
