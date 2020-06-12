@@ -1,14 +1,15 @@
 body{
     margin:0;
     padding:0;
-    
-    
+
+
 }
 .mainContainer{
     font-family: 'Montserrat', sans-serif;
+    
 }
 .mainMenu{
-    position:sticky; 
+    position:sticky;
     top:0;
     background-color:rgb(001, 042, 072);
     display: flex;
@@ -25,7 +26,7 @@ body{
     width:200px;
     color:rgb(201, 201, 201);
     font-family: 'Montserrat', sans-serif;
-    
+
 }
 .menuButton a:hover{
     background-color:rgba(0, 0, 0, 0.651);
@@ -35,19 +36,40 @@ body{
 #mainImage img{
     width:100%;
 }
+#mainImage::after{
+    content:"";
+    display:block;
+    height: 10px;
+    background-image: linear-gradient(rgb(104, 62, 82),white);
+    position: relative;
+    bottom: 4px;
+    margin-bottom: 25px;
+    
+}
 header{
     display:block;
     text-align: center;
 }
+#gh2{
+    margin:5px;
+}
+
+.h2, .h3{
+    text-align: center;
+    padding-top:10px;
+}
 #mainText{
     width:1000px;
     margin: auto;
-    background-color: red;
-    
+    padding-top:20px;
+    /* background-color: red; */
+    text-align: center;
 }
 #mainText p{
-    background-color: green;
+    /* background-color: green; */
     margin-bottom:50px;
+    text-align: center;
+    padding:7px;
 }
 .footer{
     background-color:rgb(001, 042, 072);
@@ -63,7 +85,7 @@ header{
     text-align: center;
 }
 .asideText{
-    background-color: yellow;
+    /* background-color: yellow; */
     text-align:center;
 }
 .ads{
@@ -82,31 +104,78 @@ text-decoration: none;
 
 }
 .contactList{
-background-color:rosybrown;
+/* background-color:rosybrown; */
 width: 50%;
+border-right: 1px solid black;
+height: 80%;
+margin:auto;
+}
+.contactList ul{
+    list-style-type: none;
+    padding:0;
 }
 .newsletterForm{
     width:50%;
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
+    padding-bottom: 10px;
 }
+.newsletterForm label{
+    text-align: left;
+    display:inline-block;
+    width:160px;
+    /* background-color: red; */
+    margin-bottom: 5px;
+}
+#age{
+    width:177px;
+}
+.stopper{
+    height: 30px;
+}
+.table{
+    border-collapse: collapse;
+    width:100%;
+    color:whitesmoke;
+    margin-bottom:30px;
+}
+hr{
+ width:90%;
+ border:1px solid rgb(001, 042, 072);
+}
+.table th{
+    background-color:rgb(001, 042, 072);
+}
+.table tr, table td{
+    text-align: center;
+    padding:5px;
+    border:1px solid rgb(126, 126, 126);
+}
+.table tr:nth-child(even){
+    background-color:rgb(30, 61, 83);
+}
+.table tr:nth-child(odd){
+    background-color:rgb(70, 83, 92);
+}
+
 textarea{
     resize:none
 }
 #gallery{
     height:660px;
-    background-color: yellow;
+    /* background-color: yellow; */
     position: relative;
+    padding-bottom: 30px;
 }
 #gallery h2{
-    background-color: turquoise;
+    /* background-color: turquoise; */
     display:block;
     text-align: center;
     padding: 13px;
     margin-bottom:0;
-    padding-top:50px;
+
 }
 .slider{
-    position: absolute;  
+    position: absolute;
     width:800px;
     height:550px;
     overflow: hidden;
@@ -149,7 +218,7 @@ input[name="r"]{
     height: 100%;
 }
 #r1:checked ~ .s1{
-    margin-left: 0; 
+    margin-left: 0;
 }
 #r2:checked ~ .s1{
     margin-left: -20%;
@@ -162,4 +231,40 @@ input[name="r"]{
 }
 #r5:checked ~ .s1{
     margin-left: -80%;
+}
+.title{
+    width:1000px;
+    margin:0 auto;
+    height:102px;
+    box-sizing: border-box;
+    
+}
+.deco{
+    border:10px solid rgb(001, 042, 072);
+    position:relative;
+    box-sizing: border-box;
+}
+.deco::before {
+    display:block;
+    content:" ";
+    height:13px;
+    width:900px;
+    background-color: white;
+    position: absolute;
+    top:-11px;
+    left:90px;
+    box-shadow:-100px 91px 0 white; 
+}
+.deco::after{
+    display:block;
+    content:" ";
+    height:60px;
+    width:13px;
+    background-color: white;
+    position: absolute;
+    left:-10px;
+    top:23px;
+    
+  
+    box-shadow:989px -25px 0 white;
 }

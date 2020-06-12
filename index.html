@@ -19,11 +19,13 @@
         <div id="mainImage">
             <img src="images/tlo.jpg" alt="Skyline Cinema - najlepsze kino pod księżycem">
         </div>
-        <header class="title">
-            <h1>Skyline Cinema - najlepsze kino pod księżycem</h1>
+        <header class="title deco">
+  
+                <h1>Skyline Cinema - najlepsze kino pod księżycem</h1>
+        
         </header>
         <section id="mainText">
-            <h2>
+            <h2 class="h2">
                 Kino samochodowe, pokazy plenerowe, organizacja imprez masowych.
             </h2>
             <p>
@@ -31,9 +33,9 @@
                 <br>
                 W zależności od preferencji zapewniamy również pełne wsparcie sanitarne dla punktów gastronomicznych typu foodtruck, dodatkowe namioty organizacyjne, w razie potrzeby również nocleg na terenie imprezy.
                 <br>
-                Po więcej informacji kliknij <a href="info.html" target="_blank">TUTAJ</a>.
+                Po więcej informacji kliknij <a href="#info">TUTAJ</a>.
             </p>
-
+            <hr>
             <article class="quote">
                 <h2>Pisze o nas Forbezz:</h2>
                 <p>
@@ -42,7 +44,8 @@
             </article>
             <hr>
             <article id="gallery">
-                <h2>Fotorelacje z naszych eventów</h2>
+                <div class="stopper"></div>
+                <h2 id="gh2">Fotorelacje z naszych eventów</h2>
                 <div class="slider">
                     <div class="slides">
                             <input type="radio" name="r" id="r1" checked>
@@ -69,18 +72,46 @@
             </article>
             <hr>
             <article id="price">
-                <h2>Cennik</h2>
+                <div class="stopper"></div>
                 <table class="table">
                     <tr>
-                        <th></th>
-                        <th></th>
-                        <th></th>
+                        <th colspan="4"><h2>Cennik karnetów na seanse samochodowe na rok 2020:</h2></th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Motocykl</td>
+                        <td>Samochód osobowy</td>
+                        <td>Pojazdy powyżej 7 pasażerów</td>
+                    </tr>
+                    <tr>
+                        <td>Wejście jednorazowe</td>
+                        <td>10zł</td>
+                        <td>20zł</td>
+                        <td>40zł</td>
+                    </tr>
+                    <tr>
+                        <td>Karnet 5 wejść</td>
+                        <td>40zł</td>
+                        <td>80zł</td>
+                        <td>150zł</td>
+                    </tr>
+                    <tr>
+                        <td>Karnet na sezon wakacyjny (1.06 - 31.08)</td>
+                        <td>300zł</td>
+                        <td>600zł</td>
+                        <td>1000zł</td>
+                    </tr>
+                    <tr>
+                        <td>Karnet OPEN na cały rok (ważny 365 dni od daty zakupu)</td>
+                        <td>1000zł</td>
+                        <td>1700zł</td>
+                        <td>2500zł</td>
                     </tr>
                 </table>
             </article>
             <hr>
             <article id="info">
-                <h2>Informacje</h2>
+                <h2 class="h2">Informacje</h2>
                 <p>
                     Do wyświetlania seansów pod gołym niebem używamy wysokiej jakości rzutnika ABC1234 charakteryzującego się wyśmienitą ostrością oraz kolorystyką obrazu rzucanego, a przede wszystkim obraz jest widoczny nawet w pełnym słońcu, stwarza to możliwość robienia pokazów nawet w samo południe! Dźwięk transmitowany jest za pomocą transmiterów FM, więc każdy uczestnik seansu może dostosować głośność w swoim pojeździe do własnych preferencji. Dla osób, które nie mogą korzystać z nagłośnienia w swoim samochodzie oferujemy możliwość bezpłatnego wypożyczenia odbiornika na czas seansu (w cenie biletu).  
                 </p>
@@ -88,7 +119,7 @@
             <hr>
             <article id="contact">
                 <div class="contactList">
-                    <h3>Skontaktuj się z nami:</h3>
+                    <h3 class="h3">Skontaktuj się z nami:</h3>
                     <ul>
                         <li>Telefon stacjonarny: +12 123 12 31</li>
                         <li>Telefon komórkowy: +48 123 123 123</li>
@@ -98,29 +129,32 @@
                     </ul>
                 </div>
                 <div class="newsletterForm">
-                    <h3>Zapisz się do naszego newslettera by na bieżąco dowiadywać się o naszych seansach:</h3>
+                    <h3 class="h3">Zapisz się do naszego newslettera by na bieżąco dowiadywać się o naszych seansach:</h3>
                     <form>
-                        <label for="name">Podaj imię:</label>
-                        <input type="text" id="name" name="name"> 
-                        <br>
-                        <label for="email">Podaj e-mail:</label>
-                        <input type="email" id="email" name="email">
-                        <br>
-                        <label for="age">Przedział wiekowy:</label>
-                        <select name="Wiek" id="age">
-                            <option value="18>">Poniżej 18 lat</option>
-                            <option value="18-25">18-25 lat</option>
-                            <option value="25-40">25-40 lat</option>
-                            <option value="40+">40+ lat</option>
-                        </select>   
-                        <textarea id="whereInfo" name="skad" rows="3" cols="40" placeholder="(opcjonalnie) napisz, skąd się o nas dowiedziałeś/aś :)">
-                            <!-- NAPRAWIC NIE POJAWIA SIE -->
-                        </textarea>
+                        <div>
+                            <label for="name">Podaj imię:</label>
+                            <input type="text" id="name" name="name"> 
+                        </div>
+                        <div>
+                            <label for="email">Podaj e-mail:</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div>
+                            <label for="age">Przedział wiekowy:</label>
+                            <select name="Wiek" id="age">
+                                <option value="18>">Poniżej 18 lat</option>
+                                <option value="18-25">18-25 lat</option>
+                                <option value="25-40">25-40 lat</option>
+                                <option value="40+">40+ lat</option>
+                            </select>
+                        </div>   
+                        <textarea id="whereInfo" name="skad" rows="3" cols="40" placeholder="(opcjonalnie) napisz, skąd się o nas dowiedziałeś/aś :)"></textarea>
                         <br>
                         <input type="submit" value="Zapisz się!">
                     </form>
                 </div>
             </article>
+            <hr>
         </section>
         <aside class="asideAD">
             <div class="asideText"><h2>Kontrahenci:</h2></div>
