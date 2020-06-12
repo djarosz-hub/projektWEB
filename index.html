@@ -6,9 +6,13 @@
     <title>Skyline Cinema - najlepsze kino pod księżycem</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <div class="mainContainer">
+        <button id="btnScrollToTop">
+            <i class="material-icons">arrow_upward</i>
+        </button>
         <nav class="mainMenu">
                 <div class="menuButton"><a href="index.html">Strona główna</a></div>
                 <div class="menuButton"><a href="#gallery">Galeria</a></div>
@@ -18,6 +22,7 @@
         </nav>
         <div id="mainImage">
             <img src="images/tlo.jpg" alt="Skyline Cinema - najlepsze kino pod księżycem">
+            <!-- Designed by upklyak / Freepik -->
         </div>
         <header class="title deco">
   
@@ -38,13 +43,14 @@
             <hr>
             <article class="quote">
                 <h2>Pisze o nas Forbezz:</h2>
-                <p>
+                <p id="pquote">
                     <q>Zaskakująca inicjatywa, organizacja na bardzo wysokim poziomie, idealnie rozwiązanie dla firm, które szukają nieszablonowego sposobu na zorganizowanie spotkań zarówno intergracyjnych jak i konferencyjnych. Nasza ocena: 10/10. </q>
                 </p>
             </article>
-            <hr>
+            
             <article id="gallery">
                 <div class="stopper"></div>
+                <hr>
                 <h2 id="gh2">Fotorelacje z naszych eventów</h2>
                 <div class="slider">
                     <div class="slides">
@@ -148,7 +154,7 @@
                                 <option value="40+">40+ lat</option>
                             </select>
                         </div>   
-                        <textarea id="whereInfo" name="skad" rows="3" cols="40" placeholder="(opcjonalnie) napisz, skąd się o nas dowiedziałeś/aś :)"></textarea>
+                        <textarea id="whereInfo" name="skad" rows="3" cols="45" placeholder="(opcjonalnie) napisz, skąd się o nas dowiedziałeś/aś :)"></textarea>
                         <br>
                         <input type="submit" value="Zapisz się!">
                     </form>
@@ -183,7 +189,16 @@
             <span>&copy; by Damian Jarosz 2020</span>
         </footer>
     </div>
-    
+    <script>
+        const btnScrollToTop = document.querySelector("#btnScrollToTop");
+        btnScrollToTop.addEventListener("click", function(){
+            window.scrollTo({
+                top:0,
+                left:0,
+                behavior:"smooth"
+            });
+        })
+    </script>
     
 </body>
 </html>
