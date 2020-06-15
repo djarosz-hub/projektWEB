@@ -14,20 +14,31 @@
             <i class="material-icons">arrow_upward</i>
         </button>
         <nav class="mainMenu">
+            <div class="bigMenu">
                 <div class="menuButton"><a href="index.html">Strona główna</a></div>
                 <div class="menuButton"><a href="#gallery">Galeria</a></div>
-                <div class="menuButton"><a href="#price">Cennik</a></div>
-                <div class="menuButton"><a href="#info">Informacje</a></div>
-                <div class="menuButton"><a href="#contact">Kontakt</a></div>
+                <div class="menuButton"><a href="#bpr">Cennik</a></div>
+                <div class="menuButton"><a href="#price">Informacje</a></div>
+                <div class="menuButton"><a href="#bcon">Kontakt</a></div>
+            </div>
+            <div class="smallMenu">
+                <div id="smm">Menu</div>
+            </div>
+            <ul id="smul">
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#price">Cennik</a></li>
+                <li><a href="#info">Informacje</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>    
         </nav>
         <div id="mainImage">
             <img src="images/tlo.jpg" alt="Skyline Cinema - najlepsze kino pod księżycem">
             <!-- Designed by upklyak / Freepik -->
         </div>
         <header class="title deco">
-  
                 <h1>Skyline Cinema - najlepsze kino pod księżycem</h1>
-        
+                <hr id="temp">
         </header>
         <section id="mainText">
             <h2 class="h2">
@@ -76,7 +87,7 @@
                      </div>
                 </div>
             </article>
-            <hr>
+            <hr id="bpr">
             <article id="price">
                 <div class="stopper"></div>
                 <table class="table">
@@ -115,14 +126,14 @@
                     </tr>
                 </table>
             </article>
-            <hr>
+            <hr id="binf">
             <article id="info">
                 <h2 class="h2">Informacje</h2>
                 <p>
                     Do wyświetlania seansów pod gołym niebem używamy wysokiej jakości rzutnika ABC1234 charakteryzującego się wyśmienitą ostrością oraz kolorystyką obrazu rzucanego, a przede wszystkim obraz jest widoczny nawet w pełnym słońcu, stwarza to możliwość robienia pokazów nawet w samo południe! Dźwięk transmitowany jest za pomocą transmiterów FM, więc każdy uczestnik seansu może dostosować głośność w swoim pojeździe do własnych preferencji. Dla osób, które nie mogą korzystać z nagłośnienia w swoim samochodzie oferujemy możliwość bezpłatnego wypożyczenia odbiornika na czas seansu (w cenie biletu).  
                 </p>
             </article>
-            <hr>
+            <hr id="bcon">
             <article id="contact">
                 <div class="contactList">
                     <h3 class="h3">Skontaktuj się z nami:</h3>
@@ -154,7 +165,7 @@
                                 <option value="40+">40+ lat</option>
                             </select>
                         </div>   
-                        <textarea id="whereInfo" name="skad" rows="3" cols="45" placeholder="(opcjonalnie) napisz, skąd się o nas dowiedziałeś/aś :)"></textarea>
+                        <textarea id="whereInfo" name="skad" rows="3" cols="40" placeholder="(opcjonalnie) napisz, skąd się o nas dowiedziałeś/aś :)"></textarea>
                         <br>
                         <input type="submit" value="Zapisz się!">
                     </form>
