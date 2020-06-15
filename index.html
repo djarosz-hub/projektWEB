@@ -49,7 +49,7 @@
                 <br>
                 W zależności od preferencji zapewniamy również pełne wsparcie sanitarne dla punktów gastronomicznych typu foodtruck, dodatkowe namioty organizacyjne, w razie potrzeby również nocleg na terenie imprezy.
                 <br>
-                Po więcej informacji kliknij <a href="#info">TUTAJ</a>.
+                Po więcej informacji kliknij <a href="#price">TUTAJ</a>.
             </p>
             <hr>
             <article class="quote">
@@ -208,6 +208,25 @@
                 left:0,
                 behavior:"smooth"
             });
+        })
+        const menubtn = document.getElementById("smm");
+        var temp = 1;
+        menubtn.addEventListener("click",function(){
+            if(temp == 2 ){
+                console.log("hidden");
+                temp = 1;
+                document.getElementById("smul").style.display = "none";
+            }
+            else{
+                temp = temp +1;
+            console.log("showed");
+            document.getElementById("smul").style.display = "block";
+            }
+        })
+        const ulmenu = document.getElementById("smul");
+        ulmenu.addEventListener("click", function(){
+            console.log("hidden");
+            document.getElementById("smul").style.display = "none";
         })
     </script>
     

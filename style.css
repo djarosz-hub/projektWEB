@@ -389,9 +389,6 @@ input[name="r"]{
     .smallMenu{
         display:block;
     }
-    #smul{
-       
-    }
 }
 @media(max-width:500px){
     h1{
@@ -446,5 +443,14 @@ input[name="r"]{
     }
     #temp{
         display:block;
+    }
+}
+@media (max-width:349px){
+    .newsletterForm label {
+        text-align: center;
+    }
+    .newsletterForm input,
+    .newsletterForm select {
+        margin-bottom: 10px;
     }
 }
