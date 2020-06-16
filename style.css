@@ -217,6 +217,8 @@ hr{
 }
 .table th{
     background-color:rgb(001, 042, 072);
+    font-size: 1.5em;
+    padding:10px;
 }
 .table tr, table td{
     text-align: center;
